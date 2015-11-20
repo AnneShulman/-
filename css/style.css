@@ -1,0 +1,92 @@
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+		margin:0;
+		padding: 0;
+	}
+	body{
+		font-family: "微软雅黑",Georgia,Serif;
+	}
+	.head{
+		background: rgb(111,111,111);
+		width: 100%;
+		height: 250px;
+	}
+	.name{
+		margin-left: 20px;
+		line-height: 50px;
+		float: left; 
+		font-size:20px;
+		color: #fff;
+	}
+	ul.nav{
+		float: right;
+	}
+	ul.nav li{
+		text-decoration: none;
+		display: inline-block;
+	}
+	ul.nav li a{
+		text-decoration: none;
+		line-height: 50px;
+		color: #fff;
+		margin-right: 10px;
+		font-size: 16px;
+	}
+	.title{
+		clear: both;
+		text-align: center;
+		font-size: 28px;
+		padding-top: 40px;
+		color: #fff;
+	}
+
+	.message{
+		background: rgb(117,113,94);
+		width: 100%;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.message span{
+		line-height: 22px;
+		margin-left: 10px;
+	}
+	.message .message-name{
+		color: rgb(102,217,239);
+	}
+	.message-divide{
+		color: #fff;
+	}
+	.message .message-answer{
+		color: rgb(132,129,255);
+	}
+
+	.middle{
+		background: #fff;
+		width: 100%;
+		height: 600px;
+	}
+
+	.tail{
+		background: rgb(111,111,111);
+		width: 100%;
+		height: 200px;
+	}
+
+	@media screen and (max-width: 320px){
+		.name{
+			font-size:12px;
+			margin-left: 10px;
+		}
+		ul.nav li a{
+			font-size:8px;
+			margin-right: 5px;
+		}
+		.message{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.message span{
+			font-size:10px;
+			line-height: 10px;
+		}
+	}
