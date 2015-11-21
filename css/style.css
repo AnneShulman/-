@@ -85,6 +85,20 @@
 		width: 100%;
 		padding: 60px 105px 70px 105px;
 	}
+	.introduction{
+		width: 80%;
+		height: 200px;
+	}
+	.intro-logo{
+		float: left;
+		margin-left: 10%;
+	}
+	.intro-text{
+		float: left;
+		width: 70%;
+		margin-left: 2%;
+	}
+	
 
 	/*底部模块*/
 	.tail{
