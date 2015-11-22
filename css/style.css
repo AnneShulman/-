@@ -71,12 +71,17 @@
 	}
 	.message .message-name{
 		color: rgb(102,217,239);
+		cursor: pointer;
 	}
 	.message-divide{
 		color: #fff;
 	}
 	.message .message-answer{
 		color: rgb(132,129,255);
+	}
+	.code {
+		width: 120px;
+		height: auto;
 	}
 	
 	/*中间模块*/
@@ -97,6 +102,7 @@
 		float: left;
 		width: 70%;
 		margin-left: 2%;
+		text-align: center;
 	}
 	
 
