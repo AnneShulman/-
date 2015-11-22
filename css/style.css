@@ -86,17 +86,18 @@
 		padding: 60px 105px 70px 105px;
 	}
 	.introduction{
-		width: 80%;
-		height: 200px;
+		width: 100%;
 	}
 	.intro-logo{
 		float: left;
-		margin-left: 10%;
+		margin-top: 10px;
+		margin-left: 11%;
 	}
 	.intro-text{
 		float: left;
-		width: 70%;
-		margin-left: 2%;
+		width: 60%;
+		margin-left: 3%;
+		text-align: center;
 	}
 	
 
@@ -135,11 +136,26 @@
 		.menu-btn {
 			display: block;
 		}
+		.middle{
+			padding: 30px 50px 70px 50px;
+		}
+		.intro-logo{
+			margin-left: 40%;
+		}
+		.intro-text{
+			width: 90%;
+		}
 	}
 
 	/*<320px*/
 	@media screen and (max-width: 320px) {
 		.container-fluid {
 			padding: 0 25px;
+		}
+		.middle{
+			padding: 5px;
+		}
+		.intro-logo{
+			margin-left: 25%;
 		}
 	}
