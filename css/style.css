@@ -91,11 +91,11 @@
 	.middle{
 		background: #f3f3f3;
 		width: 100%;
-		padding: 60px 105px 70px 105px;
+		padding: 40px 105px 50px 105px;
 	}
 	.introduction{
 		width: 100%;
-		padding: 0 11%;
+		padding: 0 11% 20px 11%;
 	}
 	.intro-logo{
 		float:left;
@@ -107,6 +107,120 @@
 		width: 65%;
 		margin-left: 3%;
 		text-align: center;
+	}
+	/*时间轴*/
+	.history {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		box-shadow: 0 0 15px 5px #E1E1E1;
+	}
+	.history-top {
+		width: 100%;
+		text-align: center;
+		background: #FFFFFF;
+		padding: 10px 0;
+		border-top: 1px solid #e1e1e1;
+		border-left: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+	}
+	.triangle {
+		position: absolute;
+		width: 0;
+	    height: 0;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-top: 15px solid #FFFFFF;
+	    left: 50%;
+	    margin-left: -15px;
+	    z-index: 1;
+	}
+	.triangle-bottom {
+	    border-top: 15px solid #262626;
+	}
+	.time-line {
+		position: relative;
+		width: 100%;
+		height: 198px;
+		background: url(../img/bg-about.jpg) no-repeat;
+		border-left: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+	}
+	.time-line .l {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 30%;
+		height: 100%;
+		background: url(../img/about-overlay-l.png) left no-repeat;
+	}
+	.time-line .r{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		width: 30%;
+		height: 100%;
+		background: url(../img/about-overlay-r.png) right no-repeat;
+	}
+	.time-line .time {
+		position: relative;
+		width: 65%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#history {
+		position: absolute;
+		bottom: 50px;
+		width: 3000px;
+		padding-left: 280px;
+		border-bottom: 1px dotted #fff;
+		z-index: 99;
+		text-align: center;
+	}
+	#history li {
+		display: inline;
+		list-style: none;
+	}
+	#history li a{
+		display: block;
+		float: left;
+		margin: 0 35px;
+		margin-bottom: -4px;
+		font-size: 30px;
+		font-family: arial !important;
+		color: #5e5e5e;
+		padding-bottom: 20px;
+		background: url(../img/bull.png) bottom center no-repeat;
+	}
+	#history li a:hover {
+		color: #bfbfbf;
+		
+	}
+	#history li a:focus {
+		text-decoration: none !important;
+	}
+	.active {
+		color: #FFFFFF !important;
+		font-size: 50px !important;
+		margin-top: -30px !important;
+	}
+	.history-detail {
+		width: 100%;
+		height: 222px;
+		background: #e5e5e5;
+		border-top: 1px solid #FFFFFF;
+		border-left: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+	}
+	.divider {
+		width: 100%;
+		height: 60px;
+		background: #FFFFFF;
+		border-left: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+		border-bottom: 1px solid #e1e1e1;
 	}
 	/*部门*/
 	.department {
