@@ -5,11 +5,14 @@ $(function(){
 	$(".menu-btn").on('click',function(){
 		$(".strunk-menu").slideToggle("slow");
 	});
+	var ht;
 	$(".branch").hover(function(){
-			$(this).find("h4").animate({bottom:215},500);
-			$(this).find("p").animate({top:35},500);
+			ht=$(".branch h4").css("top");
+			$(this).find("h4").animate({top:0},500);
+			$(this).find("p").animate({top:39},500);
 		},function(){
-			$(this).find("h4").animate({bottom:0},300);
-			$(this).find("p").animate({top:250},300);
+			var ht2=$(".branch").css("height");
+			$(this).find("h4").animate({top:ht},300);
+			$(this).find("p").animate({top:ht2},300);
 	});
 })

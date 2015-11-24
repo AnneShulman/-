@@ -230,16 +230,57 @@
 	.branch {
 		position: relative;
 		display: inline-block;
-		width: 20%;
+		width: 200px;
 		height: 250px;
 		margin-left: 20px;
+		margin-right: 20px;
 		margin-bottom: 20px;
 		background: rgba(192,188,166,0.8);
 		overflow:hidden;
 	}
+	.branch:nth-child(1){
+		background: url(../img/offic.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(2){
+		background: url(../img/C.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(3){
+		background: url(../img/algorithm2.png);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(4){
+		background: url(../img/sucure.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(5){
+		background: url(../img/java.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(6){
+		background: url(../img/python.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(7){
+		background: url(../img/C-.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(8){
+		background: url(../img/game.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(9){
+		background: url(../img/web.jpg);
+		background-size:100% 100%;
+	}
+	.branch:nth-child(10){
+		background: url(../img/linux.jpg);
+		background-size:100% 100%;
+	}
 	.branch h4 {
 		position: absolute;
-		bottom: 0;
+		top: 215px;
 		width: 100%;
 		margin: 0;
 		padding: 10px 0;
@@ -297,6 +338,19 @@
 		.intro-text{
 			width: 100%;
 		}
+		/*部门*/
+		.branch{
+			width: 160px;
+			height: 210px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		.branch h4{
+			top:175px;
+		}
+		.branch p{
+			top:210px;
+		}
 	}
 	/*<768px 手机*/
 	@media screen and (max-width: 768px) {
@@ -336,6 +390,19 @@
 			width: 100%;
 		}
 		
+		/*部门*/
+		.branch{
+			width: 120px;
+			height: 170px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.branch h4{
+			top:135px;
+		}
+		.branch p{
+			top:170px;
+		}
 		/*footer*/
 		.tail{
 			padding: 20px 30px;
@@ -364,6 +431,19 @@
 		}
 		.intro-text {
 			width: 100%;
+		}
+		/*部门*/
+		.branch{
+			width: 100px;
+			height: 120px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		.branch h4{
+			top:85px;
+		}
+		.branch p{
+			top:120px;
 		}
 		/*footer*/
 		.tail {
