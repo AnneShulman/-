@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript">
 		var myScroll;
 
@@ -18,13 +19,20 @@
 				scrollX: true,
 				scrollY: false,
 				momentum: false,
-				snap: true,
-				snapSpeed: 360,
+				snap: "li",
+				snapSpeed: 600,
 				keyBindings: true,
-//				indicators: {
-//					el: document.getElementById('indicator'),
-//					resize: false
-//				}
+				indicators: {
+					el: document.getElementById('detail'),
+					resize: false,
+					listenY: false,
+					listenX: true,
+					ignoreBoundaries: true
+				}
+			});
+			myScroll.on('scrollEnd',function(){
+				$("#history li a").removeClass('active');
+				$("#history li a").eq(myScroll.currentPage.pageX).addClass('active');
 			});
 	}
 	
@@ -99,27 +107,27 @@
 					<div id="scroller">
 						<ul id="history">
 							<li>
-								<a href="javascript:void(0)" class="active">
+								<a href="javascript:void(0)" class="active year">
 									<span class="year">1975</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">
+								<a href="javascript:void(0)" class="year">
 									<span class="year">1985</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">
+								<a href="javascript:void(0)" class="year">
 									<span class="year">1995</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">
+								<a href="javascript:void(0)" class="year">
 									<span class="year">2005</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">
+								<a href="javascript:void(0)" class="year">
 									<span class="year">2015</span>
 								</a>
 							</li>
@@ -129,8 +137,8 @@
 			</div>
 			<div class="triangle triangle-bottom"></div>
 			<div class="history-detail">
-				<div class="cotainer">
-					<div class="detail-holder">
+				<div class="cotainer" id="detail">
+					<div class="detail-holder" >
 						<div class="detail">
 							<div class="thumb">
 								<img src="img/example.jpg" width="147" height="192" />
@@ -215,7 +223,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
