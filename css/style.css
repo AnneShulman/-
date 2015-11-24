@@ -146,22 +146,19 @@
 		border-left: 1px solid #e1e1e1;
 		border-right: 1px solid #e1e1e1;
 	}
-	.time-line .l {
+	.time-line i {
 		position: absolute;
 		top: 0;
-		left: 0;
 		z-index: 100;
 		width: 30%;
 		height: 100%;
+	}
+	.time-line .l {
+		left: 0;
 		background: url(../img/about-overlay-l.png) left no-repeat;
 	}
 	.time-line .r{
-		position: absolute;
-		top: 0;
 		right: 0;
-		z-index: 100;
-		width: 30%;
-		height: 100%;
 		background: url(../img/about-overlay-r.png) right no-repeat;
 	}
 	.time-line .time {
@@ -170,13 +167,16 @@
 		height: 100%;
 		margin: 0 auto;
 	}
-	#history {
+	#scroller {
 		position: absolute;
 		bottom: 50px;
 		width: 3000px;
-		padding-left: 280px;
-		border-bottom: 1px dotted #fff;
+		padding-left: 38%;
 		z-index: 99;
+		border-bottom: 1px dotted #fff;
+	}
+	#history {
+		width: 100%;
 		text-align: center;
 	}
 	#history li {
@@ -207,12 +207,61 @@
 		margin-top: -30px !important;
 	}
 	.history-detail {
-		width: 100%;
-		height: 222px;
+		height: 220px;
+		position: relative;
 		background: #e5e5e5;
 		border-top: 1px solid #FFFFFF;
 		border-left: 1px solid #e1e1e1;
 		border-right: 1px solid #e1e1e1;
+	}
+	.cotainer {
+		position: relative;
+		width: 785px;
+		/*width: 100%;*/
+		height: 280px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.detail-holder {
+		width: 9000px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.detail {
+		width: 785px;
+		height: 280px;
+		position: relative;
+		float: left;
+		text-align: center;
+	}
+	.detail .thumb {
+		width: 371px;
+		height: 228px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: url(../img/ad-bg.png) center no-repeat;
+		background-size: 100%;
+	}
+	.detail .thumb img {
+		position: absolute;
+		left: 116px;
+		top: 7px;
+	}
+	.detail h1 {
+		position: absolute;
+		left: 300px;
+		top: 40px;
+	}
+	.detail p {
+		width: 480px;
+		position: absolute;
+		left: 300px;
+		top: 110px;
+		text-align: left;
+		font-size: 15px;
+		font-family: "microsoft yahei" arial;
 	}
 	.divider {
 		width: 100%;
@@ -297,6 +346,40 @@
 		.intro-text{
 			width: 100%;
 		}
+		/*时间轴*/
+		.time-line i {
+			width: 20%;
+		}
+		#history {
+			padding-left: 30%;
+		}
+		@media screen and (max-width: 955px) {
+			.cotainer {
+				width: 100%;
+			}
+			.history-detail {
+				height: auto;
+			}
+			.detail-holder {
+				width: 500%;
+			}
+			.detail {
+				width: 20%;
+				text-align: center;
+			}
+			.detail .thumb {
+				display: none;
+			}
+			.detail h1 {
+				position: static;
+			}
+			.detail p {
+				position: static;
+				margin: 0 auto;
+				font-size: 18px;
+				text-align: center;
+			}
+		}
 	}
 	/*<768px 手机*/
 	@media screen and (max-width: 768px) {
@@ -335,6 +418,30 @@
 		.intro-text{
 			width: 100%;
 		}
+		/*时间轴*/
+		.cotainer {
+			width: 100%;
+		}
+		.detail-holder {
+			width: 500%;
+		}
+		.detail {
+			width: 20%;
+			text-align: center;
+		}
+		.detail .thumb {
+			display: none;
+		}
+		.detail h1 {
+			position: static;
+		}
+		.detail p {
+			position: static;
+			margin: 0 auto;
+			width: auto;
+			font-size: 18px;
+			text-align: center;
+		}
 		
 		/*footer*/
 		.tail{
@@ -365,6 +472,34 @@
 		.intro-text {
 			width: 100%;
 		}
+		/*时间轴*/
+		.cotainer {
+			width: 100%;
+		}
+		.history-detail {
+			height: auto;
+		}
+		.detail-holder {
+			width: 500%;
+		}
+		.detail {
+			width: 20%;
+			text-align: center;
+		}
+		.detail .thumb {
+			display: none;
+		}
+		.detail h1 {
+			position: static;
+		}
+		.detail p {
+			position: static;
+			margin: 0 auto;
+			width: auto;
+			font-size: 18px;
+			text-align: center;
+		}
+		
 		/*footer*/
 		.tail {
 			padding: 5px;

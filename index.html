@@ -8,6 +8,28 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper', 
+			{ 
+				scrollX: true,
+				scrollY: false,
+				momentum: false,
+				snap: true,
+				snapSpeed: 360,
+				keyBindings: true,
+//				indicators: {
+//					el: document.getElementById('indicator'),
+//					resize: false
+//				}
+			});
+	}
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -73,42 +95,83 @@
 			<div class="time-line">
 				<i class="l"></i>
 				<i class="r"></i>
-				<div class="time">
-					<ul id="history">
-						<li>
-							<a href="javascript:void(0)" class="active">
-								<span class="year">1990</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">
-								<span class="year">1990</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">
-								<span class="year">1990</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">
-								<span class="year">1990</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">
-								<span class="year">1990</span>
-							</a>
-						</li>
-					</ul>
+				<div class="time" id="wrapper">
+					<div id="scroller">
+						<ul id="history">
+							<li>
+								<a href="javascript:void(0)" class="active">
+									<span class="year">1975</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span class="year">1985</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span class="year">1995</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span class="year">2005</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span class="year">2015</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="triangle triangle-bottom"></div>
 			<div class="history-detail">
-				
+				<div class="cotainer">
+					<div class="detail-holder">
+						<div class="detail">
+							<div class="thumb">
+								<img src="img/example.jpg" width="147" height="192" />
+							</div>
+							<h1>XXXXX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p>
+						</div>
+						<div class="detail">
+							<div class="thumb">
+								<img src="img/example.jpg" width="147" height="192" />
+							</div>
+							<h1>XXXXX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p>
+						</div>
+						<div class="detail">
+							<div class="thumb">
+								<img src="img/example.jpg" width="147" height="192" />
+							</div>
+							<h1>XXXXX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p>
+						</div>
+						<div class="detail">
+							<div class="thumb">
+								<img src="img/example.jpg" width="147" height="192" />
+							</div>
+							<h1>XXXXX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p>
+						</div>
+						<div class="detail">
+							<div class="thumb">
+								<img src="img/example.jpg" width="147" height="192" />
+							</div>
+							<h1>XXXXX</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="divider"></div>
 		</div>
+		
 		<div class="department">
 			<div class="branch"><h4>办公室</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fugiat assumenda, voluptates eos alias voluptatum cupiditate accusamus beatae consequatur quod. Earum, nemo rerum, voluptate cupiditate repudiandae error consequatur ad consectetur!</p></div>
 			<div class="branch"><h4>C/C++</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, sed consequuntur, architecto fuga eos velit inventore sunt fugiat corporis similique ipsam laborum, reiciendis. At nihil doloribus voluptatibus, expedita minima neque?</p></div>
