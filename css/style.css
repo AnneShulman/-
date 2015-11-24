@@ -235,6 +235,7 @@
 		margin-left: 20px;
 		margin-bottom: 20px;
 		background: rgba(192,188,166,0.8);
+		overflow:hidden;
 	}
 	.branch h4 {
 		position: absolute;
@@ -243,6 +244,15 @@
 		margin: 0;
 		padding: 10px 0;
 		background: rgba(250,250,250,0.5);
+	}
+	.branch p{
+		position: absolute;
+		top: 250px;
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 10px 0;
+		background:rgba(250,250,250,0.5);
 	}
 	
 
