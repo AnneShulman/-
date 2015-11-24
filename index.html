@@ -10,34 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript">
-		var myScroll;
-
-	function loaded () {
-		myScroll = new IScroll('#wrapper', 
-			{ 
-				scrollX: true,
-				scrollY: false,
-				momentum: false,
-				snap: "li",
-				snapSpeed: 600,
-				keyBindings: true,
-				indicators: {
-					el: document.getElementById('detail'),
-					resize: false,
-					listenY: false,
-					listenX: true,
-					ignoreBoundaries: true
-				}
-			});
-			myScroll.on('scrollEnd',function(){
-				$("#history li a").removeClass('active');
-				$("#history li a").eq(myScroll.currentPage.pageX).addClass('active');
-			});
-	}
-	
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-	</script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -107,27 +80,27 @@
 					<div id="scroller">
 						<ul id="history">
 							<li>
-								<a href="javascript:void(0)" class="active year">
+								<a href="javascript:pC(0)" class="active year">
 									<span class="year">1975</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)" class="year">
+								<a href="javascript:pC(1)" class="year">
 									<span class="year">1985</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)" class="year">
+								<a href="javascript:pC(2)" class="year">
 									<span class="year">1995</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)" class="year">
+								<a href="javascript:pC(3)" class="year">
 									<span class="year">2005</span>
 								</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)" class="year">
+								<a href="javascript:pC(4)" class="year">
 									<span class="year">2015</span>
 								</a>
 							</li>
@@ -225,6 +198,5 @@
 	
 	
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
