@@ -14,7 +14,8 @@
 		width: 100%;
 		padding: 0 105px;
 		background-color: rgb(30,43,34);
-		background-image: url(../img/1.gif);
+		background-image: url(../img/bg.jpg);
+		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
