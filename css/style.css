@@ -14,10 +14,10 @@
 		width: 100%;
 		padding: 0 105px;
 		background-color: rgb(30,43,34);
-		background-image: url(../img/bg.jpg);
+		background-image: url(../img/123.jpg);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center 46%;
 	}
 	
 	/*header*/
@@ -57,12 +57,13 @@
 	.propagate {
 		font-size: 36px;
 		padding: 48px 0;
+		height: 310px;
 	}
 	
 	/*媒体介绍*/
 	.message{
 		display: block;
-		background: rgb(117,113,94);
+		background: rgba(18,108,119,0.8);
 		width: 100%;
 		height: 52px;
 		text-align: center;
@@ -74,14 +75,14 @@
 		margin-left: 10px;
 	}
 	.message .message-name{
-		color: rgb(102,217,239);
+		color: rgb(253,203,87);
 		cursor: pointer;
 	}
 	.message-divide{
 		color: #fff;
 	}
 	.message .message-answer{
-		color: rgb(132,129,255);
+		color: rgb(255,255,255);
 	}
 	.code {
 		width: 120px;
@@ -352,7 +353,7 @@
 
 	/*底部模块*/
 	.tail{
-		background: rgb(111,111,111);
+		background: rgba(18,108,119,0.85);
 		width: 100%;
 		padding: 30px 105px;
 		color: #FFFFFF;
@@ -457,6 +458,8 @@
 		}
 		.container-fluid {
 			padding: 0 55px;
+			background-size: 130%;
+			background-position: center;
 		}
 		.nav {
 			display: none;
@@ -532,6 +535,8 @@
 	@media screen and (max-width: 380px) {
 		.container-fluid {
 			padding: 0 20px;
+			background-size: 200%;
+			background-position: center;
 		}
 		/*middle*/
 		.middle{
