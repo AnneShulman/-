@@ -15,13 +15,13 @@
 	.container-fluid {
 		/*height: 426px;*/
 		width: 100%;
-		padding: 0 105px;
-		background-color: rgb(30,43,34);
+		padding: 0;
+		background-color: rgb(0,0,0);
 		/*background-image: url(../img/123.jpg);*/
 		background-size: 100%;
 		background-repeat: no-repeat;
-		background-position: center 46%;
-		background-image: url(../img/bg1.jpg);
+		background-position: top;
+		background-image: url(../img/bg12.jpg);
 	}
 	
 	/*header*/
@@ -33,6 +33,7 @@
 	.nav-bar {
 		height: 50px;
 		width: 100%;
+		padding: 0 105px;
 	}
 	.nav {
 		line-height: 50px;
@@ -49,26 +50,28 @@
 		float: right;
 	}
 	.strunk-menu {
+		position: absolute;
 		z-index: 999;
 		width: 100%;
 		padding-top: 10px;
 		font-size: 20px;
 		line-height: 2;
 		display: none;
+		background: rgba(0,0,0,0.3);
 	}
 	.strunk-menu a {
 		display: block;
 	}
 	.propagate {
 		font-size: 36px;
-		padding: 48px 0;
-		height: 310px;
+		padding: 155px 0;
+		/*height: 310px;*/
 	}
 	
 	/*媒体介绍*/
 	.message{
 		display: block;
-		background: rgba(18,108,119,0.8);
+		background: rgba(89,89,89,0.6);
 		width: 100%;
 		height: 52px;
 		text-align: center;
@@ -256,6 +259,7 @@
 		top: 7px;
 	}
 	.detail h1 {
+		font-size: 28px;
 		position: absolute;
 		left: 300px;
 		top: 40px;
@@ -266,6 +270,7 @@
 		left: 300px;
 		top: 110px;
 		text-align: left;
+		text-indent: 32px;
 		font-size: 15px;
 		font-family: "microsoft yahei" arial;
 	}
@@ -354,7 +359,7 @@
 
 	/*底部模块*/
 	.tail{
-		background: rgba(18,108,119,0.85);
+		background: rgba(89,89,89,0.9);
 		width: 100%;
 		padding: 30px 105px;
 		color: #FFFFFF;
@@ -370,7 +375,20 @@
 	/* *
 	 	宽度自适应
 	 * */
-	
+	@media screen and (min-width: 955px) and (max-width: 1024px) {
+		.detail .thumb {
+			bottom: 15px;
+		}
+		.detail h1 {
+			top: 20px;
+		}
+		.detail p {
+			top: 85px;
+			margin: 0 auto;
+			padding-right: 20px;
+			font-size: 16px;
+		}
+	}
 	/*>768px <992px 平板*/
 	@media screen and (min-width: 769px) and (max-width: 992px){
 		/*footer*/
@@ -392,14 +410,6 @@
 		}
 		.intro-text{
 			width: 100%;
-		}
-
-		/*时间轴*/
-		.time-line i {
-			width: 20%;
-		}
-		#history {
-			padding-left: 30%;
 		}
 		@media screen and (max-width: 955px) {
 			.cotainer {
@@ -424,8 +434,9 @@
 			.detail p {
 				position: static;
 				margin: 0 auto;
+				padding: 0 20px;
 				font-size: 18px;
-				text-align: center;
+				/*text-align: center;*/
 			}
 		}
 
@@ -446,6 +457,10 @@
 	/*<768px 手机*/
 	@media screen and (max-width: 768px) {
 		/*header*/
+		.container-fluid {
+			/*background: url(../img/bg123.jpg) center no-repeat;*/
+			/*background-size: 100%;*/
+		}
 		.message-divide {
 			display: none;
 		}
@@ -457,10 +472,12 @@
 			line-height: 1.5 !important;
 			font-size: 20px !important;
 		}
-		.container-fluid {
-			padding: 0 55px;
+		/*.container-fluid {
 			background-size: 130%;
 			background-position: center;
+		}*/
+		.nav-bar {
+			padding: 0 55px;
 		}
 		.nav {
 			display: none;
@@ -468,7 +485,9 @@
 		.menu-btn {
 			display: block;
 		}
-
+		.propagate {
+			padding: 100px 0;
+		}
 		/*middle*/
 		.middle{
 			padding: 20px 40px 60px 40px;
@@ -484,7 +503,12 @@
 		}
 		/*时间轴*/
 		.cotainer {
+			height: 260px;
 			width: 100%;
+			overflow: auto;
+		}
+		.history-detail {
+			height: auto;
 		}
 		.detail-holder {
 			width: 500%;
@@ -497,14 +521,16 @@
 			display: none;
 		}
 		.detail h1 {
+			font-size: 24px;
+			font-weight: bold;
 			position: static;
 		}
 		.detail p {
 			position: static;
-			margin: 0 auto;
+			padding: 0 20px;
 			width: auto;
 			font-size: 18px;
-			text-align: center;
+			/*text-align: center;*/
 		}
 		
 		/*部门*/
@@ -535,9 +561,11 @@
 	/*<360px 小手机*/
 	@media screen and (max-width: 380px) {
 		.container-fluid {
-			padding: 0 20px;
 			background-size: 200%;
 			background-position: center;
+		}
+		.nav-bar {
+			padding: 0 20px;
 		}
 		/*middle*/
 		.middle{
@@ -576,7 +604,7 @@
 			margin: 0 auto;
 			width: auto;
 			font-size: 18px;
-			text-align: center;
+			/*text-align: center;*/
 		}
 		
 		/*部门*/
