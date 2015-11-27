@@ -226,7 +226,6 @@
 	.cotainer {
 		position: relative;
 		width: 785px;
-		/*width: 100%;*/
 		height: 280px;
 		margin: 0 auto;
 		overflow: hidden;
@@ -245,18 +244,25 @@
 		text-align: center;
 	}
 	.detail .thumb {
-		width: 371px;
+		width: 300px;
 		height: 228px;
 		position: absolute;
 		left: 0;
-		bottom: 0;
-		background: url(../img/ad-bg.png) center no-repeat;
-		background-size: 100%;
+		bottom: 18px;
+		/*background: url(../img/ad-bg.png) center no-repeat;
+		background-size: 100%;*/
+	}
+	.hor-pic {
+		left: 0 !important;
+		bottom: 10px;
 	}
 	.detail .thumb img {
 		position: absolute;
-		left: 116px;
-		top: 7px;
+		left: 30%;
+		height: auto;
+		padding: 10px;
+		border: 1px solid #CCCCCC;
+		background: #FFFFFF;
 	}
 	.detail h1 {
 		font-size: 28px;
@@ -265,7 +271,6 @@
 		top: 40px;
 	}
 	.detail p {
-		width: 480px;
 		position: absolute;
 		left: 300px;
 		top: 110px;
@@ -295,9 +300,21 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: 20px;
-		background: rgba(192,188,166,0.8);
+		/*background: rgba(192,188,166,0.8);*/
 		overflow:hidden;
 	}
+	/*.branch figure img{
+		width: 100%;
+		height: auto;
+	}
+	.branch figure h4 {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		margin: 0;
+		padding: 10px 0;
+		background: rgba(120,120,120,0.5);
+	}*/
 	.branch:nth-child(1){
 		background: url(../img/offic.jpg);
 		background-size:100% 100%;
@@ -338,6 +355,13 @@
 		background: url(../img/linux.jpg);
 		background-size:100% 100%;
 	}
+	.branch:hover h4{
+		top: 0;
+		background: none;
+	}
+	.branch:hover p {
+		top: 0;
+	}
 	.branch h4 {
 		position: absolute;
 		top: 215px;
@@ -345,15 +369,24 @@
 		margin: 0;
 		padding: 10px 0;
 		background: rgba(120,120,120,0.5);
+		transition:top 0.5s;
+		-moz-transition:top 0.5s, -moz-transform 0.5s; /* Firefox 4 */
+		-webkit-transition:top 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
+		-o-transition:top 0.5s, -o-transform 0.5s; /* Opera */
 	}
 	.branch p{
 		position: absolute;
-		top: 250px;
+		top: 100%;
 		width: 100%;
 		height: 100%;
 		margin:0;
-		padding: 10px 0;
-		background:rgba(120,120,120,0.5);
+		/*margin-top: 39px;*/
+		padding: 39px 20px;
+		background: rgba(120,120,120,0.5);
+		transition:top 0.5s;
+		-moz-transition:top 0.5s, -moz-transform 0.5s; /* Firefox 4 */
+		-webkit-transition:top 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
+		-o-transition:top 0.5s, -o-transform 0.5s; /* Opera */
 	}
 	
 
