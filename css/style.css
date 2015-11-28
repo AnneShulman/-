@@ -1,5 +1,5 @@
 	body {
-		font-family: "microsoft yahei";
+		font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	}
 	a {
 		color: #ffffff;
@@ -14,6 +14,7 @@
 	/*重构bootstrap*/
 	.container-fluid {
 		/*height: 426px;*/
+		position: relative;
 		width: 100%;
 		padding: 0;
 		background-color: rgb(0,0,0);
@@ -53,6 +54,7 @@
 		position: absolute;
 		z-index: 999;
 		width: 100%;
+		height: 86%;
 		padding-top: 10px;
 		font-size: 20px;
 		line-height: 2;
@@ -64,7 +66,9 @@
 	}
 	.propagate {
 		font-size: 36px;
-		padding: 155px 0;
+		font-family: "arial black";
+		color: #FFFFFF;
+		padding: 125px 0;
 		/*height: 310px;*/
 	}
 	
@@ -128,6 +132,7 @@
 	.history-top {
 		width: 100%;
 		text-align: center;
+		color: #565a5c;
 		background: #FFFFFF;
 		padding: 10px 0;
 		border-top: 1px solid #e1e1e1;
@@ -202,7 +207,7 @@
 		margin: 0 35px;
 		margin-bottom: -4px;
 		font-size: 30px;
-		font-family: arial !important;
+		font-family: georgia;
 		color: #5e5e5e;
 		padding-bottom: 20px;
 		background: url(../img/bull.png) bottom center no-repeat;
@@ -290,103 +295,96 @@
 	/*部门*/
 	.department {
 		width: 100%;
+		padding: 0 60px;
 		text-align: center;
 	}
-	.branch {
-		position: relative;
-		display: inline-block;
-		width: 200px;
-		height: 250px;
-		margin-left: 20px;
-		margin-right: 20px;
+	.title {
+		margin-bottom: 15px;
+	}
+	.title h2{
+		display: block;
+		color: #565a5c;
+		font-size: 32px;
+	}
+	.title p {
+		font-size: 16px;
+		color: #565a5c;
+	}
+	.section {
 		margin-bottom: 20px;
-		/*background: rgba(192,188,166,0.8);*/
-		overflow:hidden;
 	}
-	/*.branch figure img{
-		width: 100%;
-		height: auto;
-	}
-	.branch figure h4 {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		margin: 0;
-		padding: 10px 0;
-		background: rgba(120,120,120,0.5);
-	}*/
-	.branch:nth-child(1){
-		background: url(../img/offic.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(2){
-		background: url(../img/C.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(3){
-		background: url(../img/algorithm2.png);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(4){
-		background: url(../img/sucure.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(5){
-		background: url(../img/java.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(6){
-		background: url(../img/python.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(7){
-		background: url(../img/C-.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(8){
-		background: url(../img/game.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(9){
-		background: url(../img/web.jpg);
-		background-size:100% 100%;
-	}
-	.branch:nth-child(10){
-		background: url(../img/linux.jpg);
-		background-size:100% 100%;
-	}
-	.branch:hover h4{
-		top: 0;
-		background: none;
-	}
-	.branch:hover p {
-		top: 0;
-	}
-	.branch h4 {
-		position: absolute;
-		top: 215px;
-		width: 100%;
-		margin: 0;
-		padding: 10px 0;
-		background: rgba(120,120,120,0.5);
-		transition:top 0.5s;
-		-moz-transition:top 0.5s, -moz-transform 0.5s; /* Firefox 4 */
-		-webkit-transition:top 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
-		-o-transition:top 0.5s, -o-transform 0.5s; /* Opera */
-	}
-	.branch p{
-		position: absolute;
-		top: 100%;
+	.depart-intro {
 		width: 100%;
 		height: 100%;
-		margin:0;
-		/*margin-top: 39px;*/
-		padding: 39px 20px;
-		background: rgba(120,120,120,0.5);
-		transition:top 0.5s;
-		-moz-transition:top 0.5s, -moz-transform 0.5s; /* Firefox 4 */
-		-webkit-transition:top 0.5s, -webkit-transform 0.5s; /* Safari and Chrome */
-		-o-transition:top 0.5s, -o-transform 0.5s; /* Opera */
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		transition:opacity 0.8s;
+		-moz-transition:opacity 0.8s, -moz-transform 0.8s; /* Firefox 4 */
+		-webkit-transition:opacity 0.8s, -webkit-transform 0.8s; /* Safari and Chrome */
+		-o-transition:opacity 0.8s, -o-transform 0.8s; /* Opera */
+	}
+	.depart-intro h4 {
+		color: #FFFFFF;
+		font-size: 48px;
+		margin-top: 20px;
+		font-family: arial "microsoft yahei";
+	}
+	.depart-intro p {
+		font-size: 24px;
+		color: #FFFFFF;
+	}
+	.mark {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgb(0,0,0);
+		opacity: 0;
+		filter: alpha(opacity=0);
+		transition:opacity 0.8s;
+		-moz-transition:opacity 0.8s, -moz-transform 0.8s; /* Firefox 4 */
+		-webkit-transition:opacity 0.8s, -webkit-transform 0.8s; /* Safari and Chrome */
+		-o-transition:opacity 0.8s, -o-transform 0.8s; /* Opera */
+	}
+	.discovery-card {
+		position: relative;
+		width: 100%;
+		height: 344px;
+		cursor: pointer;
+		-webkit-filter: blur(1.5px) grayscale(40%); /* Chrome, Opera */
+       	-moz-filter: blur(1.5px) grayscale(40%);
+        -ms-filter: blur(1.5px) grayscale(40%);    
+            filter: blur(1.5px) grayscale(40%);
+		transition:filter 0.8s;
+		-moz-transition:-moz-filter 0.8s, -moz-transform 0.8s; /* Firefox 4 */
+		-webkit-transition:-webkit-filter 0.8s, -webkit-transform 0.8s; /* Safari and Chrome */
+		-o-transition:-o-filter 0.8s, -o-transform 0.8s; /* Opera */
+	}
+	.section:hover .discovery-card {
+		-webkit-filter: blur(0) grayscale(0); /* Chrome, Opera */
+       -moz-filter: blur(0) grayscale(0);
+        -ms-filter: blur(0) grayscale(0);    
+            filter: blur(0) grayscale(0); 
+	}
+	.section:hover .mark{
+		opacity: 0.2;
+		filter: alpha(opacity=20);
+	}
+	.section:hover .depart-intro {
+		opacity: 0.95;
+		filter: alpha(opacity=95);
+	}
+	.more {
+		display: none;
+		margin-top: 20px;
+	}
+	.more a{
+		font-size: 16px;
+		color: #565A5C;
 	}
 	
 
@@ -408,6 +406,14 @@
 	/* *
 	 	宽度自适应
 	 * */
+	/*bootstrap*/
+	@media screen and (min-width: 768px) and (max-width: 1200px){
+		.push-top {
+			left: 50%;
+			margin-top: -728px;
+		}
+	}
+	
 	@media screen and (min-width: 955px) and (max-width: 1024px) {
 		.detail .thumb {
 			bottom: 15px;
@@ -423,7 +429,7 @@
 		}
 	}
 	/*>768px <992px 平板*/
-	@media screen and (min-width: 769px) and (max-width: 992px){
+	@media screen and (min-width: 768px) and (max-width: 992px){
 		/*footer*/
 		.tail {
 			padding: 20px 30px;
@@ -444,6 +450,7 @@
 		.intro-text{
 			width: 100%;
 		}
+		
 		@media screen and (max-width: 955px) {
 			.cotainer {
 				width: 100%;
@@ -469,31 +476,13 @@
 				margin: 0 auto;
 				padding: 0 20px;
 				font-size: 18px;
-				/*text-align: center;*/
 			}
 		}
-
-		/*部门*/
-		.branch{
-			width: 160px;
-			height: 210px;
-			margin-left: 15px;
-			margin-right: 15px;
-		}
-		.branch h4{
-			top:175px;
-		}
-		.branch p{
-			top:210px;
-		}
+		
 	}
 	/*<768px 手机*/
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		/*header*/
-		.container-fluid {
-			/*background: url(../img/bg123.jpg) center no-repeat;*/
-			/*background-size: 100%;*/
-		}
 		.message-divide {
 			display: none;
 		}
@@ -505,10 +494,6 @@
 			line-height: 1.5 !important;
 			font-size: 20px !important;
 		}
-		/*.container-fluid {
-			background-size: 130%;
-			background-position: center;
-		}*/
 		.nav-bar {
 			padding: 0 55px;
 		}
@@ -523,7 +508,7 @@
 		}
 		/*middle*/
 		.middle{
-			padding: 20px 40px 60px 40px;
+			padding: 20px 0;
 		}
 		.intro-logo{
 			/*margin-left: 40%;*/
@@ -547,6 +532,7 @@
 			width: 500%;
 		}
 		.detail {
+			margin-top: 20px;
 			width: 20%;
 			text-align: center;
 		}
@@ -563,21 +549,21 @@
 			padding: 0 20px;
 			width: auto;
 			font-size: 18px;
-			/*text-align: center;*/
 		}
 		
 		/*部门*/
-		.branch{
-			width: 120px;
-			height: 170px;
-			margin-left: 10px;
-			margin-right: 10px;
+		.department {
+			padding-left: 0;
+			padding-right: 0;
 		}
-		.branch h4{
-			top:135px;
+		.section {
+			margin-bottom: 0;
 		}
-		.branch p{
-			top:170px;
+		.more {
+			display: block;
+		}
+		.section:nth-child(n+5) {
+			display: none;
 		}
 		/*footer*/
 		.tail{
@@ -601,9 +587,6 @@
 			padding: 0 20px;
 		}
 		/*middle*/
-		.middle{
-			padding: 10px;
-		}
 		.intro-logo{
 			width: 100%;
 			margin-left: 0;
@@ -637,22 +620,8 @@
 			margin: 0 auto;
 			width: auto;
 			font-size: 18px;
-			/*text-align: center;*/
 		}
-		
-		/*部门*/
-		.branch{
-			width: 100px;
-			height: 120px;
-			margin-left: 5px;
-			margin-right: 5px;
-		}
-		.branch h4{
-			top:85px;
-		}
-		.branch p{
-			top:120px;
-		}
+
 		/*footer*/
 		.tail {
 			padding: 5px;
