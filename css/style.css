@@ -1,3 +1,4 @@
+
 	body {
 		font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	}
@@ -523,7 +524,8 @@
 		.cotainer {
 			height: 260px;
 			width: 100%;
-			overflow: auto;
+			overflow-x: hidden;
+			-ms-overflow-x: hidden;
 		}
 		.history-detail {
 			height: auto;
@@ -558,6 +560,12 @@
 		}
 		.section {
 			margin-bottom: 0;
+		}
+		.row {
+			margin: 0;
+		}
+		.col-xs-12 {
+			padding: 0;
 		}
 		.more {
 			display: block;

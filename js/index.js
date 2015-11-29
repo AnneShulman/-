@@ -5,6 +5,8 @@ var myScroll;
 			{ 
 				scrollX: true,
 				scrollY: false,
+				eventPassthrough: true,
+				preventDefault: false,
 				momentum: false,
 				snap: "li",
 				snapSpeed: 600,
@@ -12,6 +14,7 @@ var myScroll;
 				indicators: {
 					el: document.getElementById('detail'),
 					resize: false,
+					vScrollbar: false,
 					listenY: false,
 					listenX: true,
 					ignoreBoundaries: true
@@ -22,8 +25,6 @@ var myScroll;
 				$("#history li a").eq(myScroll.currentPage.pageX).addClass('active');
 			});
 	}
-	
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
 	function pC(index) {
 		if(index > myScroll.currentPage.pageX) {
