@@ -404,6 +404,12 @@
 		margin-top: 20px;
 	}
 	
+	.to-top {
+		position: fixed;
+		display: none;
+		right: 50px;
+		bottom: 30px;
+	}
 	/* *
 	 	宽度自适应
 	 * */
@@ -526,6 +532,8 @@
 			width: 100%;
 			overflow-x: hidden;
 			-ms-overflow-x: hidden;
+			overflow-y: auto;
+			-ms-overflow-y: auto;
 		}
 		.history-detail {
 			height: auto;
@@ -633,5 +641,13 @@
 		/*footer*/
 		.tail {
 			padding: 5px;
+		}
+		
+		.to-top{
+			right: 20px;
+			bottom: 20px;
+		}
+		.to-top img {
+			width: 30px;
 		}
 	}

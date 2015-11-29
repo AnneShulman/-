@@ -46,6 +46,16 @@ $(function(){
 		$(".more").css('display','none');
 	});
 	
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 800)
+			$(".to-top").fadeIn(1000);
+		else
+			$(".to-top").fadeOut(1000);
+	});
+	
+	$(".to-top").on('click',function(){
+		$('body,html').animate({scrollTop:0},1000);
+	});
 })
 
 
